@@ -1,0 +1,5 @@
+.header-menu-nav-item-content .chevron.chevron--right{display:none}
+.header-menu-nav .header-menu-nav-folder:nth-child(2){display:none}
+  .header-menu-nav-folder--open{transform:unset!important}
+  
+.header-menu-nav .header-menu-nav-folder:nth-child(2){display:none}header-menu-nav-item

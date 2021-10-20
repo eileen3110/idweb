@@ -1,0 +1,53 @@
+/*header text bottom align*/
+.header-title-nav-wrapper{align-items:flex-end}
+.header-title {position:relative;top: unset!important}
+.header-announcement-bar-wrapper {padding-top:0!important; padding-bottom:0!important;height:min(max(12vh,5.5vw),6rem)}
+.header-display-desktop {top:-0.6rem}
+/* //Site Title Hover// */
+.header-title a:hover {
+  background: transparent;
+  color: var(--IDblue1)!important;opacity:.7!important
+}
+.header-title a{transition:color 0.1s;}
+/* //Header Navigation Hover// */
+.header-nav-item a:hover {
+  background: transparent;
+  color: var(--IDblue1) !important;opacity:.7!important
+}
+.header-nav-item a{transition:color 0.1s}
+
+/* //Header Active Color// */
+body:not(.header--menu-open) .header-nav-item--active a {background-image: none; color:var(--IDblue1)!important}
+
+/* //header font size// */
+@media screen and (min-width: 0) and (max-width: 2117.96px) and (orientation: landscape){
+.header-nav-item, .user-accounts-text-link, .cart-text-link {
+    font-size: max(min(1.5vw,1.4rem),1.2rem)
+  }}
+.header-nav-folder-content {transition:opacity .5s}
+.header-nav-folder-content a {font-size: max(min(1.25vw,1.1rem),1rem)}
+
+.header-nav-folder-item a{opacity:.6;transition: .3s!important}
+.header-nav-folder-item a:hover{opacity:.6; transition:.3s!important}
+/* Change dropdown menu background */
+.header-nav-folder-content {
+   background: transparent   !important;
+}
+
+
+/*--------------------------style dropdown menu-----------------------------*/
+/* //change to horizontal align// */
+.header-nav-folder-content {
+display: flex;
+    flex-direction: row;  }
+.header-nav-item--folder .header-nav-folder-content .header-nav-folder-item {margin-left: 1.3vw;}
+/* //justification// */
+.header .header-layout-nav-right .header-nav .header-nav-item--folder .header-nav-folder-content{position:absolute;right:-6em;top:1.4em}
+
+/*---------------------------------header------------------------------*/
+
+
+
+/* //disable header scroll-down fade in animation// */
+/*---------------------------------------------------------------------*/
+.tweak-fixed-header .header .header-announcement-bar-wrapper {background:white;}
