@@ -1,0 +1,28 @@
+
+
+ 
+ 
+  /*arrows*/
+  [data-section-slider] .swiper-button-next, [data-section-slider] .swiper-button-prev{
+  text-shadow: unset;transform: scale(var(--arrowsize));}
+[data-section-slider] .swiper-button-next:after, [data-section-slider] .swiper-button-prev:after{
+ text-shadow:unset;transition:0.8s}
+  
+ [data-section-slider] .swiper-button-next:hover:after, [data-section-slider] .swiper-button-prev:hover:after{
+ text-shadow:unset;color:var(--IDblue1)!important;}
+  /*bullets*/
+  [data-section-slider] .swiper-pagination-bullet{
+  box-shadow: unset;
+}
+  [data-section-slider] .swiper-pagination-bullets .swiper-pagination-bullet{background:unset;border-radius:0;
+  margin: 0 var(--bulletmargin);height: var(--bulletheight);
+    width: var(--bulletwidth);opacity:0.45;background-color:white;transition:.2s
+}
+  [data-section-slider] .swiper-pagination-bullets .swiper-pagination-bullet:hover{background:var(--IDblue1)!important;
+    opacity:1!important;border-color:var(--IDblue1);}
+  [data-section-slider] .swiper-pagination-bullets .swiper-pagination-bullet-active{background:white;
+    opacity:1}
+  
+  /*slider - make scroll bar disapper*/
+  .swiper-container-autoheight, .swiper-container-autoheight .swiper-slide {
+    height: 100vh;}
